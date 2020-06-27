@@ -42,6 +42,6 @@ jobs:
       env:
         GIST_ID: ${{ secrets.GIST_ID }}
       run: |
-        git config --global user.email "ClockworkRobot@email.com"
-        git config --global user.name "ClockworkRobot"
+        git config --global user.email "hphash@email.com"
+        git config --global user.name "hphashrobot"
         cd $GIST_ID && git add . && git commit -m "update new refresh_token" && git push origin master
